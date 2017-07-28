@@ -24,3 +24,6 @@ password: 1234`
 
 `username : john.doe@local.host
 password: 1234`
+
+You can also see it in action here :
+http://simplechatapp.faridnaderi.com/
