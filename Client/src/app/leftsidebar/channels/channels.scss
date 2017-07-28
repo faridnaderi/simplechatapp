@@ -1,0 +1,72 @@
+.channels{ 
+    position: absolute;
+    width:100%;
+    left: -100%;
+    top: 95px; 
+    bottom: 40px; 
+    transition: left ease-in-out .2s; 
+    > ul{
+        > li{
+            margin:1px 0;
+            background-color: rgba(255, 73, 73, 0.13);
+            transition:all ease-in .1s;
+            > a{
+                padding:5px;
+                font-size:1.5em;
+                color:#fff;
+                display: block;
+                text-decoration: none; 
+            }
+
+            .is-typing{
+                position: relative;
+                overflow: hidden;
+                height: 0px;
+                transition:height ease-in-out .1s;
+                > ul{
+                    list-style: none;
+                    padding: 0 5px;
+                    margin: 0;
+                    display: inline-block;
+                    width: 100%;
+                    top:-100%;
+                    transition:top ease-in-out .1s;
+                    position: relative;
+                    > li{
+                        float: left;
+                        margin-right: 5px;
+                        vertical-align: middle; 
+                        img{
+                            width: 30px;
+                            height: 30px;
+                            border: 1px solid #c24562;
+                            box-shadow: 0 0 1px 2px #520618;
+                            border-radius: 4px;
+
+                        }
+                    }
+                    > li:last-child{  
+                        color: rgba(255,255,255,.6);
+                        font-size: 1.5em;
+                        padding-top: 5px;
+    
+
+                    }
+                } 
+            }
+            .is-typing.show{
+                height: 40px;
+                > ul{top:3px;}
+            }
+        } 
+        > li:hover{
+            background-color: rgba(255, 81, 81, 0.25);
+        }
+        > li.empty-channels{
+            a{font-size:1.3em}
+        }
+    } 
+}
+.channels.show{
+    left:0;
+}

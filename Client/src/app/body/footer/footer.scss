@@ -1,0 +1,16 @@
+.main-body {
+    .footer{
+        background-color:#2f2626;
+        border-top:1px solid #241d1d;
+        color:#7d7272;
+        padding:10px;
+        height:20px;
+        font-size:.5em;
+        .copyright {
+            float:left;
+        }
+        .version{
+            float:right;
+        }
+    }
+}

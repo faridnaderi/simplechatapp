@@ -1,0 +1,33 @@
+.left-side-bar .footer{  
+    border-top:1px solid #8f112e;
+    background:  #6a081e url(/dist/images/left-sidebar-bg.png);
+    ul{
+        list-style: none;
+        li{
+            float:left;
+            width:25%;
+            text-align: center;
+            transition:background-color ease-in .1s;
+            a{ 
+                margin: 0 auto;
+                color:rgba(255,255,255,.5);
+                font-size:2.3em;
+                padding:5px 5px;
+                display: block;
+                height:40px;
+                border-right: 1px solid #7a142b;
+                border-left: 1px solid #510c1c; 
+                border-top:1px solid #510c1c; 
+                transition:all ease-in .1s;
+            }
+        }
+        li:hover{
+            background-color:rgba(255, 81, 81, 0.25);
+            a{ 
+                color:#fff;
+                border-left: 1px solid #7a142b; 
+                border-top:1px solid #7a142b; 
+            }
+        }
+    }
+}

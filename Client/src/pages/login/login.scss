@@ -1,0 +1,109 @@
+.login{ 
+    background:  #7a0923 url(/dist/images/left-sidebar-bg.png);
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index: 10;
+    margin-right: 0px;
+    transition: all ease-in-out .2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    color: #fff;
+    img{
+        margin-bottom: 10px;
+        top:50%;
+        height: 34px;  
+        margin-right: -40px;
+        transition: all ease-in-out .2s;  
+    }
+    .form{ 
+        width: 95%;
+        max-width: 250px;
+        text-align: center;
+        transition: opacity ease-in-out .2s;
+        .email,.password{
+            position: relative;
+            width: 100%;
+            padding: 5px;
+            padding-right: 40px;
+            margin: 2px 0;
+            border-radius: 5px;
+            border: 1px solid #902039;
+            background-color: #60071b;
+            input {
+                width: 100%;
+                font-size: 1.6em;
+                border:none;
+                background-color: transparent;
+                color: inherit;
+                padding: 5px 0;
+            } 
+            input[disabled]{
+                color:rgba(255, 255, 255, 0.55);
+                cursor: not-allowed
+            }
+        } 
+        .email:after,.password:after{
+            font-family: FontAwesome;
+            position: absolute;
+            right: 10px;
+            top: 7px;
+            font-size: 2em; 
+        }
+        .email:after{
+            content:"\f003"
+        }
+        .password:after{
+            content:"\f084"
+        }
+        .forgot-pass{
+            float:left;
+            margin-top:5px; 
+        }
+        button{
+            float: right;
+            padding: 10px 20px;  
+            border-radius: 4px;
+            transition: all ease-in .1s;
+            cursor: pointer;
+            margin-right: -45px;
+            font-size: 1.5em;
+            border: 1px solid #902039;
+            color: rgba(255, 255, 255, 0.55);
+            background-color: rgba(36, 22, 23, 0.17);
+ 
+        }
+        button:hover{
+            background-color: rgba(255, 81, 81, 0.25);
+            color:#fff;
+            border-color:#60071b;
+        }
+        button[disabled]{
+            border: 1px solid #902039;
+            color: rgba(183, 111, 111, 0.68);
+            background-color: rgba(140, 64, 69, 0.5);
+            cursor: not-allowed
+        }
+    }
+    .message{
+        font-size: 1.2em;
+        padding:10px;
+        display: block;
+    }
+}
+.login.success{
+    right:100%;
+    margin-right: -250px;
+    .form{opacity: 0}
+}
+.login.success.animate-logo{
+    //display: block;
+    img{position: absolute;top:3px; right: 88px}
+}
+.login.success.animate-logo.fade{
+    opacity: 0;
+} 

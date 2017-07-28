@@ -1,0 +1,16 @@
+.loading{ 
+    text-align: center;  
+    margin-top:50px;
+    border-radius:5px 5px 0 0;
+    font-size: .6em;
+    h5{ 
+    }
+    img{ 
+        animation:loading  infinite linear 1s;
+        width: 60px;
+    }
+}
+@keyframes loading{
+    0%{transform: rotate(0Deg)}
+    100%{transform: rotate(359Deg)}
+}
