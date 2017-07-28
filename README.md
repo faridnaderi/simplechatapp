@@ -14,3 +14,13 @@ to be able to continue develope this app, please follow this instruction.
 ### Client
 * open Client folder and run `npm install`.
 * after it finished run `npm start` to host the server it will be on localhost:8080 with webpack hot dev server
+
+### See it in action
+After above steps, you can visit it by browsing `localhost:8080`.
+for now I've added 2 test users :
+
+`username : anna.smith@local.host
+password: 1234`
+
+`username : john.doe@local.host
+password: 1234`
